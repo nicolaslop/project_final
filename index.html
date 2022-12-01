@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../css/estilos.css">
+<script src="../js/index.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="active" href="../html/index.html"><i class="fa fa-fw fa-home"></i> INICIO</a>
+      <a href="../html/productos.html"><i class="fa fa-fw fa-search"></i> PRODUCTOS</a>
+      <a href="../html/contacto.html"><i class="fa fa-fw fa-envelope"></i> CONTACTO</a>
+    </div>
+  </header>
+  <h1 style="text-align: center">
+    EL TALLER DE JASMY
+  </h1>
+  <h2 style="text-align: center">EL TALLER DE JASMY es un emprendimiento hecho con amor en el que se elabora todo tipo de muñecos, decoracion y detalles.<br> 100% elaborado a mano con materiales como madera y pañoelency.<br> En este tambien dictamos clases y/o grupales para que aprendas este hermoso arte.<br> De igual manera vendemos los KITS para la elaboracion de los muñecos </h2>
+  <br /><br /><br />
+  <div class="row">
+    <div class="column">
+      <img class="ange" src="../img/virgencita.jpg" style="width: 100%" onclick="openModal();currentSlide(1)"
+        class="hover-shadow cursor" />
+      <figcaption>Virgen MARIA</figcaption>
+    </div>
+    <div class="column">
+      <img src="../img/angelito.jpg" style="width: 100%" onclick="openModal();currentSlide(2)"
+        class="hover-shadow cursor" />
+      <figcaption>Angel JESAEL</figcaption>
+    </div>
+    <div class="column">
+      <img src="../img/chilindrina.jpg" style="width: 100%" onclick="openModal();currentSlide(3)"
+        class="hover-shadow cursor" />
+      <figcaption>Chilindrina Chavo del 8</figcaption>
+    </div>
+    <div class="column">
+      <img src="../img/duende.jpg" style="width: 100%" onclick="openModal();currentSlide(4)"
+        class="hover-shadow cursor" />
+      <figcaption>Duende chispita</figcaption>
+    </div>
+
+  </div>
+  <!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="../img/virgencita.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="../img/angelito.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="../img/chilindrina.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="../img/duende.jpg" style="width: 100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <!-- Seccion de columnas de imágenes en miniatura -->
+
+      <div class="column">
+        <img class="demo cursor" src="../img/virgencita.jpg" style="width: 100%" onclick="currentSlide(1)"
+          alt="HERMOSA VIRGEN" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/angelito.jpg" style="width: 100%" onclick="currentSlide(2)"
+          alt="HERMOSO ANGELITO" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/chilindrina.jpg" style="width: 100%" onclick="currentSlide(3)"
+          alt="HERMOSA CHLINDRINA" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/duende.jpg" style="width: 100%" onclick="currentSlide(4)"
+          alt="HERMOSO DUENDE"/>
+      </div>
+    </div>
+  </div>
+  <footer style="padding:40px; text-align: center;">
+          <div class="social-media">
+            <a href="https://www.facebook.com/yasmyastrith.orozcobecerra" class="social-media-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" class="social-media-icon">
+              <i class="fa-brands fa-whatsapp"></i> 
+            </a>
+            <a href="https://www.instagram.com/" class="social-media-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    <div class="line"></div>
+    <div style= "padding: 20px;text-align:center;" class="copyright">Copyright&copy; 2022 - NICOLAS LOPEZ OROZCO- Todos los derechos reservados</div>
+</div>
+  </footer>
+  
+<script src="https://kit.fontawesome.com/003056c8c8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
